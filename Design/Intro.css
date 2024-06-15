@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    /* Set default text color to black */
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: rgba(199, 174, 195, 0.8);
+    /* Semi-transparent background */
+    width: 170px;
+    font-family: 'Salsa', cursive;
+    height: 0vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    /* Smooth transition for width and background color */
+}
+
+.sidebar:hover {
+    width: 200px;
+    /* Expand sidebar on hover */
+    background-color: rgba(199, 174, 195, 0.9);
+    /* Slightly less transparent on hover */
+}
+
+.sidebar nav {
+    padding: 10px;
+}
+
+.sidebar nav ul {
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 20px;
+    padding: 10px 0;
+    transition: background-color 0.3s ease, padding-left 0.3s ease, color 0.3s ease;
+    /* Smooth transition for background color, padding, and text color */
+}
+
+.sidebar nav li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Change background on hover */
+    padding-left: 20px;
+    /* Indent on hover */
+    color: white;
+    /* Change text color on hover */
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    /* Make the anchor take full width */
+    transition: color 0.3s ease;
+    /* Smooth transition for color */
+}
+
+.sidebar nav li a:hover {
+    color: white;
+    /* Change color on hover */
+}
+
+/* Main Content */
+.main {
+    margin-left: 160px;
+    /* Push the main content to the right to make space for the sidebar */
+    width: calc(100% - 160px);
+    transition: margin-left 0.3s ease, width 0.3s ease;
+    /* Smooth transition for margin and width */
+}
+
+.sidebar:hover~.main {
+    margin-left: 200px;
+    /* Adjust main content margin when sidebar is expanded */
+    width: calc(100% - 200px);
+}
+
+/* Container */
+.container {
+    display: flex;
+}
+
+/* Info Container */
+.infocontainer {
+    height: auto;
+    /* Allow the container to adjust its height based on content */
+    width: 80vw;
+    margin: 99px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* Center items vertically */
+}
+
+.devInfo {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    margin-left: -130px;
+    /* Add some left margin for better spacing */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&family=Playwrite+NL:wght@100..400&display=swap');
+
+.Hello {
+    font-size: 37px;
+    color: #333;
+    /* Darken text color for better readability */
+    margin-left: 120px;
+    margin-top: -90px;
+    font-family: "Playwrite FR Moderne", cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap');
+
+.Name {
+    font-size: 27px;
+    font-weight: bold;
+    color: #333;
+    /* Darken text color for better readability */
+    margin-left: 175px;
+    font-family: "Playwrite NL", cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&family=Playwrite+NL:wght@100..400&family=Playwrite+VN:wght@100..400&display=swap');
+
+.About {
+    max-width: 70%;
+    margin-top: 20px;
+    margin-left: 150px;
+    font-family: "Playwrite VN", cursive;
+    color: black;
+}
+
+.About h2{
+    font-size: 22px;
+    font-family: "Playwrite VN", cursive;
+    color: #e01f1f;
+}
+
+
+
+.buttons {
+    margin-top: 34px;
+    margin-left: 120px;
+}
+
+.Hrishav2 {
+    width: 100%;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    height: 65vh; /* 65% of the viewport height */
+    margin: 0 auto; /* Center align horizontally */
+    margin-top: -650px; /* Adjust the margin top to position the element */
+    overflow: hidden; /* Hide any overflow to prevent scrollbars */
+}
+
+.Hrishav2 img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: 100%; /* Ensure the image takes up the full height of its container */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+    border-radius: 15px; /* Adjust the border radius as needed */
+}
+
+/* BACKGROUND IMAGE */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('bg1.jpg') no-repeat center center fixed;
+    /* Replace 'bg.jpg' with your image path */
+    background-size: cover;
+    /* opacity: 0.8; Set the opacity to make the background image less visible */
+}
+
+.container {
+    padding: 20px;
+    /* Adds some padding inside the container */
+    border-radius: 5px;
+    margin: 0;
+    /* Removes external margins */
+    width: calc(90% - 20px);
+    /* Ensures the container covers 90% of the full width minus padding */
+    height: calc(190vh - 10px);
+    /* Ensures the container covers the full height minus padding */
+    box-sizing: border-box;
+    /* Ensures padding is included in the width and height calculations */
+}
+
+/* SOCIAL MEDIA */
+.social-media {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-media a img {
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    /* Added padding to avoid white lines */
+    background-color: white;
+    /* Adding background color to avoid white lines */
+    border-radius: 5px;
+    /* Optional: makes the icons slightly rounded */
+}
+/* 
+
+.social-media {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.social-media a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect
+    transition: transform 0.3s ease;
+}
+    */
+
+.social-media a img:hover {
+    transform: scale(1.2); } 
+
+/* For Copyright Footer */
+footer {
+    text-align: center;
+    /* Center-align text */
+    padding: 10px 0;
+    /* Padding top and bottom */
+}
+
+footer p {
+    margin: 0;
+    /* Remove default margin */
+}
